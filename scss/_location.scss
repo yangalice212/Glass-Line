@@ -1,0 +1,25 @@
+.location-banner{
+    background: url(../img/qa.png) no-repeat center;
+    background-size: cover;
+    height: 304px;
+}
+
+.select-location{
+    label{
+        width: 200px;
+        font-size: 24px;
+    }
+    form{
+        width: 280px;
+    }
+    .locate-img{
+        width: 100%;
+        height: auto;
+    }
+    .locate-detail{
+        border: 1px $gray-400 solid;
+        h4{
+            border-bottom: 1px solid $gray-400;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.classic-menu{
+    li{
+        border: 1px solid $bGray;
+        width: 462px;   
+    }
+    .select{
+        border-bottom: 16px solid $primary;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        border-bottom: 16px solid transparent;
+        p{
+            font-size: 42px;
+            @include media-breakpoint-down(md){
+                font-size: 28px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+        &:hover{
+            border-bottom: 16px solid $primary;
+        }
+        img{
+            width: 48px;
+            height: 48px;
+            @include media-breakpoint-down(md){
+                width: 32px;
+                height: 32px;
+            }
+            @include media-breakpoint-down(sm){
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.classic-banner{
+    &1{
+        background: url(../img/banner-1.png) no-repeat center;
+    }
+    &2{
+        background: url(../img/banner-2.png) no-repeat center;
+    }
+    &1,&2{
+        width: 945px;
+        height: 309px;
+        background-size: cover;
+        @include media-breakpoint-down(xs){
+            width: 187.5px;
+            height: 144px;
+        }
+    }
+}
+
+.classic-product{
+    h2{
+        @include media-breakpoint-down(xs){
+            font-size: 20px;
+        }
+    }
+    h3{
+        @include media-breakpoint-down(xs){
+            font-size: 16px;
+        }
+    }
+    &-list{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .product-color{
+        a p{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+    }
+}

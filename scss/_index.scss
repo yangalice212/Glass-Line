@@ -1,0 +1,132 @@
+h2{
+    font-size: 48px;
+    @include media-breakpoint-down(md){
+        font-size: 48px;
+    }
+    @include media-breakpoint-down(sm){
+        font-size: 32px;
+    }
+}
+
+.banner{
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+    height: 840px;
+    @include media-breakpoint-down(md){
+        background: url(../img/banner-sm.png) no-repeat;
+        background-size: cover;
+    }
+    &-text{
+        height: 840px;
+        @include media-breakpoint-down(md){
+        }
+        h2{
+            font-size: 36px;
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 16px;
+            }
+        }
+        h3{
+            font-size: 64px;
+            @include media-breakpoint-down(md){
+                font-size: 48px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.attitude{
+    img{
+        height: 80px;
+    }
+}
+
+.classic-frame{
+    &-img1{
+        background: url(../img/product-1.png);
+    }
+    &-img2{
+        background: url(../img/product-2.png);
+    }
+    &-img3{
+        background: url(../img/product-3.png);
+    }
+    &-img1,&-img2,&-img3{
+        height: 320px;
+        background-size: cover;
+        @include media-breakpoint-down(sm){
+            height: 168px;
+        }
+        @include media-breakpoint-down(xs){
+            position: relative;
+        }
+    }
+    &-text{
+        p{
+            font-size: 48px;
+            color: $primary;
+            @include media-breakpoint-down(xs){
+                color: white;
+            }
+        }
+        @include media-breakpoint-down(xs){
+            position: absolute;
+            padding-top: 40px;
+        }
+    }
+    &-icon1, &-icon2, &-icon3{
+        width: 60px;
+        height: 60px;
+    }
+    &-icon1{
+        background: url(../img/icon-diamond.svg) no-repeat center;
+        @include media-breakpoint-down(xs){
+            background: url(../img/icon-diamond-white.svg) no-repeat center;        
+        }
+    }
+    &-icon2{
+        background: url(../img/icon-sun.svg) no-repeat center;
+        @include media-breakpoint-down(xs){
+            background: url(../img/icon-sun-white.svg) no-repeat center;        
+        }
+    }
+    &-icon3{
+        background: url(../img/icon-thunder.svg) no-repeat center;
+        @include media-breakpoint-down(xs){
+            background: url(../img/icon-thunder-white.svg) no-repeat center;        
+        }
+    }
+}
+
+.design-frame{
+    background: url(../img/bg.png);
+    background-size: cover;
+    &-text{
+        font-size: 72px;
+        @include media-breakpoint-down(md){
+            font-size: 32px;
+        }
+    }
+    .gray{
+        background-color: #ffffff;
+        img{
+            opacity: 0.6;
+        }
+    }
+    li{
+        position: relative;
+        p{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            @include media-breakpoint-down(md){
+                left: 30%;            }
+            }
+    }
+}

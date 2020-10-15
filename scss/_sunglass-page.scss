@@ -1,0 +1,17 @@
+.sunglass-banner{
+    &1{
+        background: url(../img/banner-3.png) no-repeat center;
+    }
+    &2{
+        background: url(../img/banner-4.png) no-repeat center;
+    }
+    &1,&2{
+        width: 945px;
+        height: 309px;
+        background-size: cover;
+        @include media-breakpoint-down(xs){
+            width: 187.5px;
+            height: 144px;
+        }
+    }
+}
