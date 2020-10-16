@@ -6,6 +6,16 @@
     .share{
         border-bottom: 1px solid $grayD;
     }
+    h2{
+        @include media-breakpoint-down(sm){
+            color: $brown;
+        }
+    }
+    h3{
+        @include media-breakpoint-down(sm){
+            font-size: 14px;
+        }
+    }
 }
 .tag{
     font-weight: bold;
