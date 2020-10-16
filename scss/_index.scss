@@ -12,13 +12,15 @@ h2{
     background: url(../img/banner.png) no-repeat;
     background-size: cover;
     height: 840px;
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(sm){
         background: url(../img/banner-sm.png) no-repeat;
         background-size: cover;
+        height: 394px;
     }
     &-text{
         height: 840px;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(sm){
+            height: 394px;
         }
         h2{
             font-size: 36px;
